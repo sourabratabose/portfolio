@@ -9,6 +9,7 @@
     "build-test": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "predeploy": "bun run build",
     "deploy": "gh-pages -d ./dist"
   },
   "homepage": "https://sourabratabose.github.io/portfolio",
