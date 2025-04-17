@@ -15,5 +15,5 @@ export default defineConfig({
     cssMinify: "lightningcss"
   },
   plugins: [tailwindcss(), react()],
-  // base: "/portfolio"
+  base: "/portfolio"
 });
