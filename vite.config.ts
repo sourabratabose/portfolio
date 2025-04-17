@@ -4,7 +4,6 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   root: "./",
-  base: "/pages/portfolio",
   server: {
     port: 5173
   },

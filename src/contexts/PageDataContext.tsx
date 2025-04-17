@@ -320,6 +320,7 @@ const defaultValue: PageData = {
   achievements: [
     {
       category: "Test Scores",
+      description: "Some of the test scores I have achieved so far during my professional career.",
       achievements: [
         {
           heading: "GATE DS/AI",
@@ -330,7 +331,7 @@ const defaultValue: PageData = {
         {
           heading: "TATA NQT IT",
           date: "March 2025",
-          description: "",
+          description: "78.13%",
         },
         {
           heading: "Higher Secondary",
@@ -346,22 +347,23 @@ const defaultValue: PageData = {
     },
     {
       category: "Spoken Languages",
+      description: "Languages I am able to converse in and understand for communication. ",
       achievements: [
         {
           heading: "English",
-          description: "Full Working Proficiency",
+          description: "Working",
         },
         {
           heading: "Hindi",
-          description: "Bilingual Proficiency",
+          description: "Bilingual",
         },
         {
           heading: "Bengali",
-          description: "Native Proficiency",
+          description: "Native",
         },
         {
           heading: "French",
-          description: "Elementary Proficiency",
+          description: "Elementary",
         },
       ],
     },

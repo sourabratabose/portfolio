@@ -1,7 +1,6 @@
 import { blackA, iris, irisA, irisDarkA } from "@radix-ui/colors";
 
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   theme: {
     extend: {
       colors: {
@@ -10,6 +9,6 @@ module.exports = {
         ...irisA,
         ...irisDarkA,
       }
-    },
+    }
   }
 };

@@ -13,13 +13,13 @@ import { PageData } from "../contexts/PageDataContext";
 import AchievementsData, { Achievement } from "../types/AchievementsData";
 import { Link2Icon, TriangleRightIcon } from "@radix-ui/react-icons";
 
-export default function Achievements() {
+export default function KnowMore() {
   const { achievements: data } = useContext(PageData);
   return (
     <Section p={"3"} asChild={true}>
       <Flex direction={"column"} gap={"5"} width={"100%"}>
         <Heading as={"h1"} size={"8"} weight={"bold"} align={"left"}>
-          Achievements
+          Know More
         </Heading>
         <Text as={"p"} weight={"light"} size={"3"}>
           Know more about me and my other achievements in my career. Hope you
@@ -38,6 +38,9 @@ export default function Achievements() {
               >
                 {val.category}
               </Heading>
+              <Text as={"p"} weight={"light"} size={"3"}>
+                {val.description}
+              </Text>
               <Flex direction={"row"} wrap={"wrap"} gap={"3"} key={idx}>
                 {val.achievements.map(
                   (achievement: Achievement, innerIdx: number) => (
@@ -49,7 +52,12 @@ export default function Achievements() {
                       width={"100%"}
                     >
                       <TriangleRightIcon className={"mt-1.5 shrink-0"} />
-                      <Flex gap={"1"} align={"start"} width={"100%"} wrap={"wrap"}>
+                      <Flex
+                        gap={"1"}
+                        align={"start"}
+                        width={"100%"}
+                        wrap={"wrap"}
+                      >
                         {achievement.url != undefined ? (
                           <Link href={achievement.url} underline={"hover"}>
                             <Badge color={"bronze"} size={"3"}>
@@ -63,10 +71,17 @@ export default function Achievements() {
                         )}
                         {achievement.date != undefined ? (
                           <Text className="text-nowrap">
-                            <Em>( {achievement.date} )</Em> : 
+                            <Em>( {achievement.date} )</Em> :
                           </Text>
-                        ) : <Text> : </Text>}
-                        <Text as={"p"} weight={"light"} size={"3"} wrap={"nowrap"}>
+                        ) : (
+                          <Text> : </Text>
+                        )}
+                        <Text
+                          as={"p"}
+                          weight={"light"}
+                          size={"3"}
+                          wrap={"nowrap"}
+                        >
                           {achievement.description}
                         </Text>
                       </Flex>

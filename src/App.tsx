@@ -14,7 +14,7 @@ import Certifications from "./components/Certifications";
 import Projects from "./components/Projects";
 import Newsletter from "./components/Newsletter";
 import Experience from "./components/Experience";
-import Achievements from "./components/Achievements";
+import KnowMore from "./components/KnowMore";
 
 function App() {
   const { currentTheme }: ThemeContextData = useContext(ThemePresets);
@@ -59,7 +59,7 @@ function App() {
             <Education />
             <CodingProfiles />
             <Certifications />
-            <Achievements />
+            <KnowMore />
           </Flex>
         </Flex>
       </Container>

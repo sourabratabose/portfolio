@@ -7,6 +7,7 @@ export type Achievement = {
 
 type AchievementsData = {
   category: string;
+  description: string;
   achievements: Achievement[];
 };
 
