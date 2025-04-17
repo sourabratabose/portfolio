@@ -86,11 +86,18 @@ export default function Projects() {
                 align={"center"}
                 justify={"start"}
               >
-                {val.urls.map((url, innerIdx) => (
-                  <Link href={url.href} underline={"hover"} key={innerIdx} asChild={true}>
-                    <Button variant={"surface"}>{url.label}</Button>
-                  </Link>
-                ))}
+                {val.urls.map((url, innerIdx) => {
+                  if (url.href == "") return;
+                  return (
+                    <Link
+                      href={url.href}
+                      underline={"hover"}
+                      key={innerIdx}
+                    >
+                      <Button variant={"surface"}>{url.label}</Button>
+                    </Link>
+                  );
+                })}
               </Flex>
             </Flex>
           </Blockquote>

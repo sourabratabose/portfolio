@@ -8,8 +8,10 @@
     "build": "tsc -b && vite build",
     "build-test": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d ./dist"
   },
+  "homepage": "https://sourabratabose.github.io/portfolio",
   "dependencies": {
     "@elysiajs/eden": "^1.2.0",
     "@radix-ui/colors": "^3.0.0",

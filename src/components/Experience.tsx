@@ -79,7 +79,7 @@ export default function Experience() {
                 <Link href={val.url} underline={"hover"} asChild={true}>
                   <Button variant={"surface"}>
                     <Link2Icon />
-                    Profile link
+                    Resources link
                   </Button>
                 </Link>
               </Flex>

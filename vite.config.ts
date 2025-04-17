@@ -4,6 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   root: "./",
+  publicDir: "./public",
   server: {
     port: 5173
   },
@@ -14,4 +15,5 @@ export default defineConfig({
     cssMinify: "lightningcss"
   },
   plugins: [tailwindcss(), react()],
+  // base: "/portfolio"
 });

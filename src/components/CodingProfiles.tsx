@@ -67,7 +67,7 @@ export default function CodingProfiles() {
                     </Flex>
                   ))}
                 </Flex>
-                <Link href={val.url} underline={"hover"} asChild={true}>
+                <Link href={val.url} underline={"hover"}>
                   <Button variant={"surface"}>
                     <Link2Icon />
                     Profile link

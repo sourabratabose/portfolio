@@ -17,7 +17,7 @@ type PageData = {
   about: string[],
   projects: ProjectData[],
   contactEmail: string,
-  spokenLanguages: string[],
+  // spokenLanguages: string[],
   achievements: AchievementsData[]
 }
 

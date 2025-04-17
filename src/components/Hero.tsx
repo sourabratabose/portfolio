@@ -29,7 +29,7 @@ export default function Hero() {
         gap={"5"}
         m={"1"}
       >
-        <Avatar size={"9"} fallback={"Sourabrata Bose"} />
+        <Avatar size={"9"} fallback={"Sourabrata Bose"} src="/pfp.jpg" />
         <Heading
           as={"h1"}
           size={"8"}
@@ -66,22 +66,22 @@ export default function Hero() {
           {data.description}
         </Text>
         <Flex align={"center"} justify={"between"} gap={"5"} width={"100%"}>
-          <Link download={true} href="">
+          <Link download={true} href="/resume.pdf">
             <Button variant={"solid"}>
               Resume <FileTextIcon />
             </Button>
           </Link>
           <Flex align={"center"} justify={"end"} gap={"3"}>
-            <Link href={"http://github.com"}>
+            <Link href={"https://github.com/sourabratabose"}>
               <GitHubLogoIcon className="h-6 w-6 hover:scale-110" />
             </Link>
-            <Link href={"http://github.com"}>
+            <Link href={"https://www.linkedin.com/in/sourabratabose/"}>
               <LinkedInLogoIcon className="h-6 w-6 hover:scale-110" />
             </Link>
-            <Link href={"http://github.com"}>
+            <Link href={"https://www.instagram.com/sourabratabose.dev/"}>
               <InstagramLogoIcon className="h-6 w-6 hover:scale-110" />
             </Link>
-            <Link href={"http://github.com"}>
+            <Link href={"https://x.com/sourabrata_bose"}>
               <TwitterLogoIcon className="h-6 w-6 hover:scale-110" />
             </Link>
           </Flex>

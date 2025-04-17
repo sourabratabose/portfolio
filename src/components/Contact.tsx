@@ -1,4 +1,5 @@
 import {
+  ChatBubbleIcon,
   Cross1Icon,
   EnvelopeClosedIcon,
   PaperPlaneIcon,
@@ -18,7 +19,6 @@ import {
 import { FormEvent, FormEventHandler, useContext, useState } from "react";
 import { PageData } from "../contexts/PageDataContext";
 import messageSend, { messageSchema } from "../function/MessageSend";
-
 
 export default function Contact() {
   const [sendingMessage, setSendingMessage] = useState<boolean>(false);
@@ -40,9 +40,9 @@ export default function Contact() {
       const success: boolean = await messageSend(data);
       if (success) setSendStatus("success");
       else setSendStatus("fail");
-      setTimeout(() => setSendStatus("none"), 5000)
+      setTimeout(() => setSendStatus("none"), 5000);
     } catch (e) {
-      console.error("Error while parsing message : ", e)
+      console.error("Error while parsing message : ", e);
     } finally {
       setSendingMessage(false);
     }
@@ -70,7 +70,9 @@ export default function Contact() {
       <Flex align={"center"} justify={"between"} gap={"5"} width={"100%"}>
         <Dialog.Root>
           <Dialog.Trigger>
-            <Button>Message Me</Button>
+            <Button>
+              Message Me <ChatBubbleIcon />
+            </Button>
           </Dialog.Trigger>
 
           <Dialog.Content>
@@ -153,7 +155,10 @@ export default function Contact() {
             </form>
           </Dialog.Content>
         </Dialog.Root>
-        <Link href={""} underline={"hover"} asChild={true}>
+        <Link
+          href={"mailto:bose.sourabrata21century@gmail.com"}
+          underline={"hover"}
+        >
           <Button variant={"surface"}>
             E - Mail Me <EnvelopeClosedIcon />
           </Button>

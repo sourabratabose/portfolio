@@ -13,7 +13,7 @@ const defaultValue: PageData = {
     {
       platform: "Geeks for Geeks",
       url: "https://www.geeksforgeeks.org/user/sourabratabose/",
-      img: "",
+      img: "/gfg.png",
       imgFallback: "GFG",
       description:
         "Displaying my progress across various data structures and algorithms. The profile highlights my coding activity, contest participation, and achieved ranks. This serves as a public record of my coding journey and improvement on the platform.",
@@ -26,7 +26,7 @@ const defaultValue: PageData = {
     {
       platform: "LeetCode",
       url: "https://leetcode.com/u/sourabratabose/",
-      img: "",
+      img: "/leetcode.webp",
       imgFallback: "LC",
       description:
         "LeetCode is a leading platform for technical interview preparation, offering a vast library of coding problems across various difficulty levels and topics. It simulates real interview environments with its online code editor and testing capabilities. Users can practice company-specific questions and participate in contests to hone their skills. LeetCode also fosters a strong community for discussions and sharing solutions.",
@@ -39,30 +39,30 @@ const defaultValue: PageData = {
   ],
   certification: [
     {
-      img: "",
+      img: "/aws.png",
       imgFallback: "AWS",
       certifiedBy: "Amazon Web Services",
-      url: "",
+      url: "https://drive.google.com/drive/folders/15LLUHENnBDcg32sKYH7TkbHBBcZkIn0F?usp=drive_link",
       subject: "AWS Cloud Practitioner",
       date: "March 17, 2025",
       description:
         "The AWS Cloud Practitioner course offers a foundational understanding of AWS services and cloud computing concepts. It covers core topics like AWS infrastructure, security, pricing, and support models. This course is ideal for individuals in technical and non-technical roles seeking cloud literacy.",
     },
     {
-      img: "",
+      img: "/google.png",
       imgFallback: "GS-GA",
       certifiedBy: "Google Skillshop",
-      url: "",
+      url: "https://drive.google.com/drive/folders/15LLUHENnBDcg32sKYH7TkbHBBcZkIn0F?usp=drive_link",
       subject: "Google Analytics & Reports",
       date: "March 28, 2025",
       description:
         "The Google Analytics & Reports course equips you with the skills to track and analyze website and app traffic. You'll learn to generate insightful reports on user behavior, acquisition, and conversions. The course covers understanding key metrics, navigating the Google Analytics interface, and customizing reports for specific needs. Ultimately, it empowers data-driven decision-making to improve online performance and marketing strategies.",
     },
     {
-      img: "",
+      img: "/udemy.png",
       imgFallback: "Udemy",
       certifiedBy: "Udemy",
-      url: "",
+      url: "https://drive.google.com/drive/folders/15LLUHENnBDcg32sKYH7TkbHBBcZkIn0F?usp=drive_link",
       subject: "NodeJS Architecture",
       date: "April 3, 2025",
       description:
@@ -72,7 +72,7 @@ const defaultValue: PageData = {
   education: [
     {
       degree: "Bachelor of Computer Science",
-      img: "",
+      img: "/iiitk.jpg",
       imgFallback: "IIITK",
       institute: "Indian Institute of Information Technology, Kalyani",
       timePeriod: "December 2021 - July 2025",
@@ -93,7 +93,7 @@ const defaultValue: PageData = {
     },
     {
       degree: "Diploma in Science",
-      img: "",
+      img: "apjs.jpg",
       imgFallback: "APJS",
       institute: "Apeejay School, Salt Lake",
       timePeriod: "March 2018 - June 2020",
@@ -109,7 +109,7 @@ const defaultValue: PageData = {
     },
     {
       degree: "Diploma in General Education",
-      img: "",
+      img: "apjs.jpg",
       imgFallback: "APJS",
       institute: "Apeejay School, Salt Lake",
       timePeriod: "March 2017 - June 2018",
@@ -210,8 +210,11 @@ const defaultValue: PageData = {
         "SEO Optimization includes features like generating meta descriptions, title tags, and sitemaps to improve search engine rankings. Next.js makes SEO easier with its SSR/SSG capabilities and libraries like next-seo.",
       ],
       urls: [
-        { href: "", label: "Project Repo" },
-        { href: "", label: "Live URL" },
+        {
+          href: "https://github.com/sourabratabose/Digital-Quill.git",
+          label: "Project Repo",
+        },
+        { href: "https://digital-quill-sbose.vercel.app/", label: "Live URL" },
       ],
     },
     {
@@ -241,7 +244,10 @@ const defaultValue: PageData = {
         "File Sharing: Enables users to send and receive various types of files (images, documents, etc.) within their chats. Allows embedding and displaying images, videos, and potentially audio directly within the chat interface.",
       ],
       urls: [
-        { href: "", label: "Project Repo" },
+        {
+          href: "https://github.com/sourabratabose/Babble.git",
+          label: "Project Repo",
+        },
         { href: "", label: "Live URL" },
       ],
     },
@@ -273,7 +279,10 @@ const defaultValue: PageData = {
         "Quiz Scheduling and Management: Allows organizers to schedule quizzes for specific dates and times, set durations, manage participant access, and track quiz progress.",
       ],
       urls: [
-        { href: "", label: "Project Repo" },
+        {
+          href: "https://github.com/sourabratabose/Quizzard.git",
+          label: "Project Repo",
+        },
         { href: "", label: "Live URL" },
       ],
     },
@@ -283,8 +292,8 @@ const defaultValue: PageData = {
       company: "CodSoft",
       role: "Web Developer Intern",
       time: "March 12, 2025 - April 20, 2025",
-      url: "",
-      img: "",
+      url: "https://drive.google.com/drive/folders/1DfUvjrb-VyZsX8FGWn9c1cuDejYeh8Bw?usp=drive_link",
+      img: "/codsoft.png",
       imgFallback: "CS",
       description:
         "As a MERN web developer intern, I immersed myself in building full-stack applications using MongoDB, Express.js, React, and Node.js. My daily tasks involved contributing to both frontend and backend development, collaborating with senior engineers on feature implementation and bug fixes. I gained practical experience in the entire software development lifecycle, from understanding requirements to deployment. This internship provided invaluable hands-on experience in modern web development practices.",
@@ -299,8 +308,8 @@ const defaultValue: PageData = {
       company: "CodeCubes",
       role: "Core Student Member",
       time: "December 12, 2021 - April 20, 2023",
-      url: "",
-      img: "",
+      url: "https://drive.google.com/drive/folders/1DfUvjrb-VyZsX8FGWn9c1cuDejYeh8Bw?usp=drive_link",
+      img: "/codecubes.jpg",
       imgFallback: "CC",
       description:
         "CodeCubes is an exclusive coding club within the college, admitting only highly motivated and skilled students through a selection process. It fosters a collaborative environment for advanced learning and competitive programming. Members engage in challenging projects, participate in coding contests, and receive mentorship from experienced seniors and faculty. The club aims to elevate members' coding proficiency beyond the regular curriculum, preparing them for advanced opportunities in the tech industry.",
@@ -312,15 +321,11 @@ const defaultValue: PageData = {
     },
   ],
   contactEmail: "bose.sourabrata21century@gmail.com",
-  spokenLanguages: [
-    "English (Full Working Proficiency)",
-    "Bengali (Native)",
-    "Hindi (Bilingual)",
-  ],
   achievements: [
     {
       category: "Test Scores",
-      description: "Some of the test scores I have achieved so far during my professional career.",
+      description:
+        "Some of the test scores I have achieved so far during my professional career.",
       achievements: [
         {
           heading: "GATE DS/AI",
@@ -347,7 +352,8 @@ const defaultValue: PageData = {
     },
     {
       category: "Spoken Languages",
-      description: "Languages I am able to converse in and understand for communication. ",
+      description:
+        "Languages I am able to converse in and understand for communication. ",
       achievements: [
         {
           heading: "English",
