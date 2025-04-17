@@ -10,6 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "homepage": "https://sourabratabose.github.io/portfolio",
   "dependencies": {
     "@elysiajs/eden": "^1.2.0",
     "@radix-ui/colors": "^3.0.0",
