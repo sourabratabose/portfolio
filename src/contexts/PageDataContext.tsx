@@ -68,6 +68,16 @@ const defaultValue: PageData = {
       description:
         "This NodeJS architecture course delves into its event-driven, non-blocking I/O model. It explores how NodeJS utilizes the V8 JavaScript engine for high performance. The course covers key architectural patterns, module systems (like CommonJS and ES Modules), and handling asynchronous operations efficiently. Understanding this architecture is crucial for building scalable and performant network applications.",
     },
+    {
+      img: "/udemy.png",
+      imgFallback: "Udemy",
+      certifiedBy: "Udemy",
+      url: "https://drive.google.com/drive/folders/15LLUHENnBDcg32sKYH7TkbHBBcZkIn0F?usp=drive_link",
+      subject: "Complete JavaScript",
+      date: "March 18, 2025",
+      description:
+        "This complete JavaScript course delves into its event-driven, non-blocking I/O model. It explores how JavaScript utilizes the V8 JavaScript engine and other Web APIs available in browsers for high performance and interactivity. The course covers key JavaScript language concepts, module systems (like CommonJS and ES Modules), and handling asynchronous operations, promises, errors and calling web APIs effectively. Understanding these are crucial for building seamless intuitive, interactive and performant web frontend.",
+    },
   ],
   education: [
     {
@@ -296,7 +306,7 @@ const defaultValue: PageData = {
       title: "Rainman",
       description:
         "Rainman is an open-source, feature-rich weather application designed to provide accurate and up-to-date weather forecasts. With a clean and intuitive user interface, it ensures you always stay informed about the weather conditions in your area and beyond.",
-      timePeriod: "August 2024 - November 2024",
+      timePeriod: "August 2023 - November 2023",
       technologies: [
         "React Native",
         "Expo",
@@ -305,7 +315,8 @@ const defaultValue: PageData = {
         "Native Wind",
         "Firebase",
         "Firebase SDK",
-        "Authentication"
+        "Authentication",
+        "RESTful API",
       ],
       pointsToBeNoted: [
         "Fetch Default Location: Automatically detects and displays weather for your current location.",
@@ -316,7 +327,7 @@ const defaultValue: PageData = {
       ],
       urls: [
         {
-          href: "",
+          href: "https://github.com/sourabratabose/Rainman",
           label: "Project Repo",
         },
         { href: "", label: "Live URL" },
