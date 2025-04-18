@@ -1,5 +1,6 @@
 import { Context, createContext, ReactNode } from "react";
 import type PageData from "../types/PageDataContext";
+import { FileTextIcon, LetterCaseCapitalizeIcon } from "@radix-ui/react-icons";
 
 const defaultValue: PageData = {
   hero: {
@@ -8,6 +9,14 @@ const defaultValue: PageData = {
     countrySymbol: "IN",
     description:
       "A passionate fullstack web and hybrid mobile application developer building bleeding edge tech projects in Typescript, React Native, Solidity and Rust for people.",
+    resumeUrl:
+      "https://drive.google.com/file/d/1zHZ2RjoZCFAS1_jVcSpGhxSoSQ52EJXw/view?usp=drive_link",
+    socials: {
+      github: "https://github.com/sourabratabose",
+      linkedin: "https://www.linkedin.com/in/sourabratabose/",
+      twitter: "https://x.com/sourabrata_bose",
+      instagram: "https://www.instagram.com/sourabratabose.dev/",
+    },
   },
   codingProfile: [
     {
@@ -371,6 +380,7 @@ const defaultValue: PageData = {
   achievements: [
     {
       category: "Test Scores",
+      icon: <FileTextIcon />,
       description:
         "Some of the test scores I have achieved so far during my professional career.",
       achievements: [
@@ -399,6 +409,7 @@ const defaultValue: PageData = {
     },
     {
       category: "Spoken Languages",
+      icon: <LetterCaseCapitalizeIcon />,
       description:
         "Languages I am able to converse in and understand for communication along with my proficiency in them. Comfortable to work in these languages with the proficiency as mentioned along.",
       achievements: [

@@ -67,22 +67,24 @@ export default function Hero() {
           {data.description}
         </Text>
         <Flex align={"center"} justify={"between"} gap={"5"} width={"100%"}>
-          <Link download={true} href="/resume.pdf">
+          <Link
+            href={data.resumeUrl}
+          >
             <Button variant={"solid"}>
               Resume <FileTextIcon />
             </Button>
           </Link>
           <Flex align={"center"} justify={"end"} gap={"3"}>
-            <Link href={"https://github.com/sourabratabose"}>
+            <Link href={data.socials.github}>
               <GitHubLogoIcon className="h-6 w-6 hover:scale-110" />
             </Link>
-            <Link href={"https://www.linkedin.com/in/sourabratabose/"}>
+            <Link href={data.socials.linkedin}>
               <LinkedInLogoIcon className="h-6 w-6 hover:scale-110" />
             </Link>
-            <Link href={"https://www.instagram.com/sourabratabose.dev/"}>
+            <Link href={data.socials.instagram}>
               <InstagramLogoIcon className="h-6 w-6 hover:scale-110" />
             </Link>
-            <Link href={"https://x.com/sourabrata_bose"}>
+            <Link href={data.socials.twitter}>
               <TwitterLogoIcon className="h-6 w-6 hover:scale-110" />
             </Link>
           </Flex>

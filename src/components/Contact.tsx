@@ -156,7 +156,7 @@ export default function Contact() {
           </Dialog.Content>
         </Dialog.Root>
         <Link
-          href={"mailto:bose.sourabrata21century@gmail.com"}
+          href={"mailto:" + data}
           underline={"hover"}
         >
           <Button variant={"surface"}>
