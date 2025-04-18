@@ -7,7 +7,7 @@ import HeroData from "./HeroData";
 import ProjectData from "./ProjectData";
 import SkillData from "./SkillData";
 
-type PageData = {
+type PageDataType = {
   hero: HeroData,
   experience: ExperienceData[],
   codingProfile: CodeProfileData[],
@@ -21,4 +21,4 @@ type PageData = {
   achievements: AchievementsData[]
 }
 
-export default PageData;
+export default PageDataType;

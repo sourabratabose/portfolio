@@ -11,9 +11,10 @@ import {
 import { Link2Icon } from "@radix-ui/react-icons";
 import { useContext } from "react";
 import { PageData } from "../contexts/PageDataContext";
+import PageDataType from "../types/PageDataContext";
 
 export default function Certifications() {
-  const { certification: data } = useContext(PageData);
+  const { certification: data } = useContext<PageDataType>(PageData);
   return (
     <Section p={"3"} asChild={true}>
       <Flex direction={"column"} gap={"5"} width={"100%"}>

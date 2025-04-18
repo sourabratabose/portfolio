@@ -7,7 +7,7 @@ const defaultValue: PageData = {
     location: "Kolkata, WB, India",
     countrySymbol: "IN",
     description:
-      "A passionate fullstack web developer building bleeding edge tech projects in Typescript and Rust for people.",
+      "A passionate fullstack web and hybrid mobile application developer building bleeding edge tech projects in Typescript, React Native, Solidity and Rust for people.",
   },
   codingProfile: [
     {
@@ -32,7 +32,7 @@ const defaultValue: PageData = {
         "LeetCode is a leading platform for technical interview preparation, offering a vast library of coding problems across various difficulty levels and topics. It simulates real interview environments with its online code editor and testing capabilities. Users can practice company-specific questions and participate in contests to hone their skills. LeetCode also fosters a strong community for discussions and sharing solutions.",
       pointsToBeNoted: [
         "Solved over 100+ questions in total.",
-        "Rated as a 1460+ elo LeetCoder.",
+        "Rated as a 1560+ elo LeetCoder.",
         "Have an acceptance rate over 70% + in overall submissions.",
       ],
     },
@@ -134,6 +134,7 @@ const defaultValue: PageData = {
         "C",
         "C++",
         "Rust",
+        "Solidity",
         "Java",
         "Python",
       ],
@@ -161,6 +162,8 @@ const defaultValue: PageData = {
         "BetterAuthJS",
         "ReactNative",
         "Anchor",
+        "Tokio",
+        "Axum",
       ],
       color: "amber",
     },
@@ -178,13 +181,13 @@ const defaultValue: PageData = {
     },
   ],
   about: [
-    "I'm a 22-year-old experienced Full Stack Developer with a knack for building products that make a difference. My expertise spans both frontend and backend technologies, enabling me to craft comprehensive solutions from the ground up.",
-    "Throughout my career, I've been deeply involved in the startup ecosystem. I've worked with various startups, embracing the fast-paced, innovative nature of these environments. This journey led me to found my own startup, where I gained firsthand experience in every aspect of product development and business operations.",
-    "During my high school years, I excelled in software development, earning the prestigious title of DUX (top student) in this field. This early achievement laid the foundation for my passion and expertise in programming.",
+    "I'm a 23-year-old junior Fullstack Web and Hybrid Mobile Application Developer with a knack for building products that make a difference. My expertise spans both frontend (both web and mobile app) and backend technologies, enabling me to craft comprehensive solutions from the ground up.",
+    "Throughout my career, I've been deeply involved in the startup ecosystem. I've worked with various startups, embracing the fast-paced, innovative nature of these environments. This journey led me gain firsthand experience in every aspect of product development and business operations.",
+    "During my high school years, I excelled in software development, architecture and computer internals, earning the top scores in this field and vocational training. This early achievement laid the foundation for my passion and expertise in programming.",
   ],
   projects: [
     {
-      img: "",
+      img: "/digital-quill.png",
       imgFallback: "Digital Quill - An online fullstack blog application.",
       title: "Digital Quill",
       description:
@@ -218,7 +221,7 @@ const defaultValue: PageData = {
       ],
     },
     {
-      img: "",
+      img: "/babble.png",
       imgFallback: "Babble - An online fullstack live chat application.",
       title: "Babble",
       description:
@@ -281,6 +284,39 @@ const defaultValue: PageData = {
       urls: [
         {
           href: "https://github.com/sourabratabose/Quizzard.git",
+          label: "Project Repo",
+        },
+        { href: "", label: "Live URL" },
+      ],
+    },
+    {
+      img: "/weather.png",
+      imgFallback:
+        "Rainman - A simple cross platform mobile application to fetch weather data.",
+      title: "Rainman",
+      description:
+        "Rainman is an open-source, feature-rich weather application designed to provide accurate and up-to-date weather forecasts. With a clean and intuitive user interface, it ensures you always stay informed about the weather conditions in your area and beyond.",
+      timePeriod: "August 2024 - November 2024",
+      technologies: [
+        "React Native",
+        "Expo",
+        "TypeScript",
+        "EAS",
+        "Native Wind",
+        "Firebase",
+        "Firebase SDK",
+        "Authentication"
+      ],
+      pointsToBeNoted: [
+        "Fetch Default Location: Automatically detects and displays weather for your current location.",
+        "Firebase Integration: Leverages Firebase for real-time data synchronization, including history and search.",
+        "Real-Time History: Automatically updates your weather search history in real time.",
+        "Search Locations: Search for weather details of any city or location with instant results.",
+        "Real-Time Weather Data: Fetches weather updates in real time using the OpenWeather API.",
+      ],
+      urls: [
+        {
+          href: "",
           label: "Project Repo",
         },
         { href: "", label: "Live URL" },
@@ -353,11 +389,11 @@ const defaultValue: PageData = {
     {
       category: "Spoken Languages",
       description:
-        "Languages I am able to converse in and understand for communication. ",
+        "Languages I am able to converse in and understand for communication along with my proficiency in them. Comfortable to work in these languages with the proficiency as mentioned along.",
       achievements: [
         {
           heading: "English",
-          description: "Working",
+          description: "Professional",
         },
         {
           heading: "Hindi",

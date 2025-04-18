@@ -24,7 +24,7 @@ export default function Projects() {
         {data.map((val, idx) => (
           <Blockquote size={"3"} wrap={"pretty"} key={idx}>
             <Flex direction={"column"} mb={"1"} gap={"3"}>
-              <Box overflow={"hidden"} maxWidth={"100%"} maxHeight={"160px"}>
+              <Box overflow={"hidden"} maxWidth={"100%"} maxHeight={"250px"}>
                 <img alt={val.imgFallback} src={val.img} />
               </Box>
               <Heading

@@ -2,9 +2,10 @@ import { TriangleRightIcon, Link2Icon } from "@radix-ui/react-icons";
 import { Section, Flex, Heading, Blockquote, Link, Button, Text, Avatar } from "@radix-ui/themes";
 import { useContext } from "react";
 import { PageData } from "../contexts/PageDataContext";
+import PageDataType from "../types/PageDataContext";
 
 export default function Experience() {
-  const { experience: data } = useContext(PageData);
+  const { experience: data } = useContext<PageDataType>(PageData);
   return (
     <Section p={"3"} asChild={true}>
       <Flex direction={"column"} gap={"5"} width={"100%"}>
@@ -76,7 +77,7 @@ export default function Experience() {
                     </Flex>
                   ))}
                 </Flex>
-                <Link href={val.url} underline={"hover"} asChild={true}>
+                <Link href={val.url} underline={"hover"}>
                   <Button variant={"surface"}>
                     <Link2Icon />
                     Resources link

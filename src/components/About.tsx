@@ -2,9 +2,10 @@ import { Flex, Heading, Section, Text } from "@radix-ui/themes";
 import { useContext } from "react";
 import { Fragment } from "react/jsx-runtime";
 import { PageData } from "../contexts/PageDataContext";
+import PageDataType from "../types/PageDataContext";
 
 export default function About() {
-  const { about: aboutBody } = useContext(PageData);
+  const { about: aboutBody } = useContext<PageDataType>(PageData);
   return (
     <Section p={"3"} asChild={true}>
       <Flex direction={"column"} gap={"5"} width={"100%"}>
