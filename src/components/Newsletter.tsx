@@ -30,7 +30,7 @@ export default function Newsletter() {
       else setSignUpStatus("fail");
       setTimeout(() => setSignUpStatus("none"), 5000);
     } catch (e) {
-      console.log("Error while parsing email : ", e)
+      console.log("Error while parsing email: ", e)
     } finally {
       setSigningUp(false);
     }

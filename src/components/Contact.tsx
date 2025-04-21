@@ -42,7 +42,7 @@ export default function Contact() {
       else setSendStatus("fail");
       setTimeout(() => setSendStatus("none"), 5000);
     } catch (e) {
-      console.error("Error while parsing message : ", e);
+      console.error("Error while parsing message: ", e);
     } finally {
       setSendingMessage(false);
     }
@@ -120,7 +120,7 @@ export default function Contact() {
                   </Text>
                   <TextField.Root
                     placeholder="Enter your company name"
-                    name="companyName"
+                    name="company"
                   />
                 </label>
                 <label>

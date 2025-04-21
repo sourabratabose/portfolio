@@ -1,4 +1,5 @@
 import { z } from "zod";
+import client from "./SupabaseClient";
 
 export const emailSchema = z.string().email().min(5).max(100);
 
@@ -6,13 +7,15 @@ export default async function newsletter(
   action: "subscribe" | "unsubscribe",
   email: z.infer<typeof emailSchema>
 ): Promise<boolean> {
-  const response = await fetch("", {
-    body: JSON.stringify({
+  const { data, error } = await client.functions.invoke("newsletter", {
+    body: {
       action,
       email,
-    }),
+    },
     method: "POST"
   });
-  if (response.ok) return JSON.parse(await response.text()).body;
-  else throw new Error("API unavailable right now");
+  if (error == null) {
+    if (data != null) return data;
+    else return false;
+  } else throw new Error("API unavailable right now");
 }
