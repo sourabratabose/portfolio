@@ -144,12 +144,12 @@ export default function Contact() {
                     disabled={sendingMessage}
                     size={"2"}
                   >
-                    Subscribe <PaperPlaneIcon />
+                    Send <PaperPlaneIcon />
                   </Button>
                 ) : sendStatus == "success" ? (
-                  <Badge color={"grass"}>Sign up successful</Badge>
+                  <Badge color={"grass"} size={"3"}>Message Sent</Badge>
                 ) : (
-                  <Badge color={"ruby"}>Failed to signup</Badge>
+                  <Badge color={"ruby"} size={"3"}>Message Failed</Badge>
                 )}
               </Flex>
             </form>
