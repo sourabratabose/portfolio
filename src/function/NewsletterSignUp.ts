@@ -1,7 +1,7 @@
 import { z } from "zod";
 import client from "./SupabaseClient";
 
-export const emailSchema = z.string().email().min(5).max(100);
+export const emailSchema = z.string().email().min(5).max(255);
 
 export default async function newsletter(
   action: "subscribe" | "unsubscribe",
