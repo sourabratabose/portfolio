@@ -3,7 +3,7 @@ import client from "./SupabaseClient";
 
 export const messageSchema = z.object({
   name: z.string().min(3).max(255),
-  email: z.string().email().min(5).max(255),
+  email: z.email().min(5).max(255),
   company: z.string().min(5).max(500).optional(),
   message: z.string().min(3).max(5000)
 })

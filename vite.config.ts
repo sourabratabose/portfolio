@@ -12,7 +12,12 @@ export default defineConfig({
     emptyOutDir: true,
     outDir: "./dist",
     copyPublicDir: true,
-    cssMinify: "lightningcss"
+    cssMinify: "lightningcss",
+    rolldownOptions: {
+      output: {
+        codeSplitting: true
+      }
+    }
   },
   plugins: [tailwindcss(), react()],
 });
