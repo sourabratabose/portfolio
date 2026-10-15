@@ -11,10 +11,10 @@ import {
 } from "@radix-ui/themes";
 import { TriangleRightIcon } from "@radix-ui/react-icons";
 import { useContext } from "react";
-import { PageData } from "../contexts/PageDataContext";
+import PageDataContext from "../contexts/PageDataContext";
 
 export default function Projects() {
-  const { projects: data } = useContext(PageData);
+  const { projects: data } = useContext(PageDataContext);
   return (
     <Section p={"3"} asChild={true} maxWidth={"100%"}>
       <Flex direction={"column"} gap={"5"} width={"100%"}>

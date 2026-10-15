@@ -1,11 +1,11 @@
 import { TriangleRightIcon, Link2Icon } from "@radix-ui/react-icons";
 import { Section, Flex, Heading, Blockquote, Link, Button, Text, Avatar } from "@radix-ui/themes";
 import { useContext } from "react";
-import { PageData } from "../contexts/PageDataContext";
 import PageDataType from "../types/PageDataContext";
+import PageDataContext from "../contexts/PageDataContext";
 
 export default function Experience() {
-  const { experience: data } = useContext<PageDataType>(PageData);
+  const { experience: data } = useContext<PageDataType>(PageDataContext);
   return (
     <Section p={"3"} asChild={true}>
       <Flex direction={"column"} gap={"5"} width={"100%"}>

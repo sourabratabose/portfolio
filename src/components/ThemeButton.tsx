@@ -1,12 +1,12 @@
 import { useContext } from "react";
-import { ThemePresets } from "../contexts/ThemeContext";
 import ThemeContextData from "../types/ThemeContextData";
 import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
 import { Switch } from "radix-ui";
+import ThemeContext from "../contexts/ThemeContext";
 
 export default function ThemeButton() {
   const { currentTheme, toggleTheme }: ThemeContextData =
-    useContext(ThemePresets);
+    useContext(ThemeContext);
   return (
     <Switch.Root
       className={"relative cursor-pointer w-11 h-7 rounded-full bg-iris-a7 shadow-md shadow-iris-a3"}

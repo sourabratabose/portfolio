@@ -10,11 +10,11 @@ import {
   Em,
 } from "@radix-ui/themes";
 import { useContext } from "react";
-import { PageData } from "../contexts/PageDataContext";
 import PageDataType from "../types/PageDataContext";
+import PageDataContext from "../contexts/PageDataContext";
 
 export default function Education() {
-  const { education: data } = useContext<PageDataType>(PageData);
+  const { education: data } = useContext<PageDataType>(PageDataContext);
   return (
     <Section p={"3"} asChild={true}>
       <Flex direction={"column"} gap={"5"} width={"100%"}>

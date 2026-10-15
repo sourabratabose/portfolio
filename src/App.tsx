@@ -2,7 +2,6 @@ import { Box, Container, Flex, Theme } from "@radix-ui/themes";
 import Header from "./components/Header";
 import ThemeContextData from "./types/ThemeContextData";
 import { useContext } from "react";
-import { ThemePresets } from "./contexts/ThemeContext";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Contact from "./components/Contact";
@@ -15,9 +14,10 @@ import Projects from "./components/Projects";
 import Newsletter from "./components/Newsletter";
 import Experience from "./components/Experience";
 import KnowMore from "./components/KnowMore";
+import ThemeContext from "./contexts/ThemeContext";
 
 function App() {
-  const { currentTheme }: ThemeContextData = useContext(ThemePresets);
+  const { currentTheme }: ThemeContextData = useContext(ThemeContext);
   return (
     <Theme
       appearance={currentTheme}
