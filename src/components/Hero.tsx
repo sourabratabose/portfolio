@@ -16,11 +16,11 @@ import {
   Text,
 } from "@radix-ui/themes";
 import { useContext } from "react";
-import { PageData } from "../contexts/PageDataContext";
 import PageDataType from "../types/PageDataContext";
+import PageDataContext from "../contexts/PageDataContext";
 
 export default function Hero() {
-  const { hero: data } = useContext<PageDataType>(PageData);
+  const { hero: data } = useContext<PageDataType>(PageDataContext);
   return (
     <Card className={"shadow-iris-a5/60 shadow-lg"}>
       <Flex

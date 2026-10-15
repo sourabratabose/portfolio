@@ -17,8 +17,8 @@ import {
   TextField,
 } from "@radix-ui/themes";
 import { FormEvent, FormEventHandler, useContext, useState } from "react";
-import { PageData } from "../contexts/PageDataContext";
 import messageSend, { messageSchema } from "../function/MessageSend";
+import PageDataContext from "../contexts/PageDataContext";
 
 export default function Contact() {
   const [sendingMessage, setSendingMessage] = useState<boolean>(false);
@@ -26,7 +26,7 @@ export default function Contact() {
     "none"
   );
 
-  const { contactEmail: data } = useContext(PageData);
+  const { contactEmail: data } = useContext(PageDataContext);
 
   const submitHandler: FormEventHandler<HTMLFormElement> = async (
     e: FormEvent<HTMLFormElement>

@@ -9,13 +9,13 @@ import {
 } from "@radix-ui/themes";
 import { Fragment } from "react/jsx-runtime";
 import { useContext } from "react";
-import { PageData } from "../contexts/PageDataContext";
 import AchievementsData, { Achievement } from "../types/AchievementsData";
 import { Link2Icon, TriangleRightIcon } from "@radix-ui/react-icons";
 import PageDataType from "../types/PageDataContext";
+import PageDataContext from "../contexts/PageDataContext";
 
 export default function KnowMore() {
-  const { achievements: data } = useContext<PageDataType>(PageData);
+  const { achievements: data } = useContext<PageDataType>(PageDataContext);
   return (
     <Section p={"3"} asChild={true}>
       <Flex direction={"column"} gap={"5"} width={"100%"}>

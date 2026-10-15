@@ -2,10 +2,10 @@ import { Section, Flex, Heading, Badge } from "@radix-ui/themes";
 import SkillData from "../types/SkillData";
 import { Fragment } from "react/jsx-runtime";
 import { useContext } from "react";
-import { PageData } from "../contexts/PageDataContext";
+import PageDataContext from "../contexts/PageDataContext";
 
 export default function Skills() {
-  const { skills: skillData } = useContext(PageData);
+  const { skills: skillData } = useContext(PageDataContext);
   return (
     <Section p={"3"} asChild={true}>
       <Flex direction={"column"} gap={"5"} width={"100%"}>
