@@ -1,10 +1,10 @@
 @import "tailwindcss";
-@config "./tailwind.config.js";
-
 @import "@radix-ui/colors/gray.css";
 @import "@radix-ui/colors/iris.css";
 @import "@radix-ui/colors/gray-alpha.css";
 @import "@radix-ui/colors/iris-alpha.css";
+
+@config "./tailwind.config.js";
 
 *::-webkit-scrollbar {
   height: 8px;
