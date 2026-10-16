@@ -17,55 +17,55 @@ import KnowMore from "./components/KnowMore";
 import ThemeContext from "./contexts/ThemeContext";
 
 function App() {
-  const { currentTheme }: ThemeContextData = useContext(ThemeContext);
-  return (
-    <Theme
-      appearance={currentTheme}
-      accentColor={"iris"}
-      grayColor={"gray"}
-      radius={"medium"}
-    >
-      <Header />
-      <Container align={"center"} size={"4"}>
-        <Flex
-          direction={{ initial: "column", md: "row" }}
-          gap={"5"}
-          justify={"center"}
-          align={{ initial: "center", md: "start" }}
-          mx={"5"}
-          mt={"80px"}
-        >
-          <Box
-            minWidth={{ md: "448px" }}
-            width={"100%"}
-            px={"3"}
-            position={{ initial: "static", md: "sticky" }}
-            top={"80px"}
-          >
-            <Hero />
-            <Contact />
-            <Newsletter />
-          </Box>
-          <Flex
-            gap={"5"}
-            direction={"column"}
-            align={"center"}
-            justify={"start"}
-          >
-            <About />
-            <Skills />
-            <Projects />
-            <Experience />
-            <Education />
-            <CodingProfiles />
-            <Certifications />
-            <KnowMore />
-          </Flex>
-        </Flex>
-      </Container>
-      <Footer />
-    </Theme>
-  );
+	const { currentTheme }: ThemeContextData = useContext(ThemeContext);
+	return (
+		<Theme
+			appearance={currentTheme}
+			accentColor={"iris"}
+			grayColor={"gray"}
+			radius={"medium"}
+		>
+			<Header />
+			<Container align={"center"} size={"4"}>
+				<Flex
+					direction={{ initial: "column", md: "row" }}
+					gap={"5"}
+					justify={"center"}
+					align={{ initial: "center", md: "start" }}
+					mx={"5"}
+					mt={"80px"}
+				>
+					<Box
+						minWidth={{ md: "448px" }}
+						width={"100%"}
+						px={"3"}
+						position={{ initial: "static", md: "sticky" }}
+						top={"80px"}
+					>
+						<Hero />
+						<Contact />
+						<Newsletter />
+					</Box>
+					<Flex
+						gap={"5"}
+						direction={"column"}
+						align={"center"}
+						justify={"start"}
+					>
+						<About />
+						<Skills />
+						<Projects />
+						<Experience />
+						<Education />
+						<CodingProfiles />
+						<Certifications />
+						<KnowMore />
+					</Flex>
+				</Flex>
+			</Container>
+			<Footer />
+		</Theme>
+	);
 }
 
 export default App;

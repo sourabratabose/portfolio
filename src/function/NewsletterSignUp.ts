@@ -4,18 +4,18 @@ import client from "./SupabaseClient";
 export const emailSchema = z.string().email().min(5).max(255);
 
 export default async function newsletter(
-  action: "subscribe" | "unsubscribe",
-  email: z.infer<typeof emailSchema>
+	action: "subscribe" | "unsubscribe",
+	email: z.infer<typeof emailSchema>,
 ): Promise<boolean> {
-  const { data, error } = await client.functions.invoke("newsletter", {
-    body: {
-      action,
-      email,
-    },
-    method: "POST"
-  });
-  if (error == null) {
-    if (data != null) return data;
-    else return false;
-  } else throw new Error("API unavailable right now");
+	const { data, error } = await client.functions.invoke("newsletter", {
+		body: {
+			action,
+			email,
+		},
+		method: "POST",
+	});
+	if (error == null) {
+		if (data != null) return data;
+		else return false;
+	} else throw new Error("API unavailable right now");
 }

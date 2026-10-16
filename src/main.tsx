@@ -7,11 +7,11 @@ import ThemeProvider from "./providers/ThemeContext.tsx";
 import PageDataProvider from "./providers/PageDataContext.tsx";
 
 createRoot(document.getElementById("root")!).render(
-  <StrictMode>
-    <ThemeProvider>
-      <PageDataProvider>
-        <App />
-      </PageDataProvider>
-    </ThemeProvider>
-  </StrictMode>,
+	<StrictMode>
+		<ThemeProvider>
+			<PageDataProvider>
+				<App />
+			</PageDataProvider>
+		</ThemeProvider>
+	</StrictMode>,
 );

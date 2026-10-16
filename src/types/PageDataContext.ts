@@ -8,17 +8,17 @@ import ProjectData from "./ProjectData";
 import SkillData from "./SkillData";
 
 type PageDataType = {
-  hero: HeroData,
-  experience: ExperienceData[],
-  codingProfile: CodeProfileData[],
-  certification: CertificationData[],
-  education: EducationData[],
-  skills: SkillData[],
-  about: string[],
-  projects: ProjectData[],
-  contactEmail: string,
-  // spokenLanguages: string[],
-  achievements: AchievementsData[]
-}
+	hero: HeroData;
+	experience: ExperienceData[];
+	codingProfile: CodeProfileData[];
+	certification: CertificationData[];
+	education: EducationData[];
+	skills: SkillData[];
+	about: string[];
+	projects: ProjectData[];
+	contactEmail: string;
+	// spokenLanguages: string[],
+	achievements: AchievementsData[];
+};
 
 export default PageDataType;
