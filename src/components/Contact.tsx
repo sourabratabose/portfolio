@@ -40,6 +40,11 @@ export default function Contact() {
 		setSendingMessage(true);
 		try {
 			const formObject = Object.fromEntries(new FormData(e.currentTarget));
+
+			console.log(
+				`Message object formed from FormData : ${JSON.stringify(formObject, null, 2)}`,
+			);
+
 			const data = messageSchema.parse(formObject);
 
 			const success: boolean = await messageSend(data);
