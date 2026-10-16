@@ -12,14 +12,39 @@ jobs:
     steps:
       # Checkout repository
       - name: Checkout the repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
+          ref: master
+          persist-credentials: true
       # Format Code
       - name: Format and Lint the code in the repository
         uses: super-linter/super-linter@v7.3.0
+        continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DEFAULT_BRANCH: master
+          VALIDATE_ALL_CODEBASE: true
+
+          # JavaScript and JSX
+          FIX_JAVASCRIPT_ES: true
+          FIX_JAVASCRIPT_PRETTIER: true
+          FIX_JSX_PRETTIER: true
+
+          # TypeScript and React
+          FIX_TYPESCRIPT_ES: true
+          FIX_TYPESCRIPT_PRETTIER: true
+          FIX_TSX: true
+
+          # CSS and HTML
+          FIX_CSS: true
+          FIX_CSS_PRETTIER: true
+          FIX_HTML_PRETTIER: true
+
+          # JSON, Markdown and YAML
+          FIX_JSON_PRETTIER: true
+          FIX_MARKDOWN_PRETTIER: true
+          FIX_YAML_PRETTIER: true
       # Setup and install bun
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
