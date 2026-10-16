@@ -3,18 +3,18 @@ import type PageData from "../types/PageDataContext";
 
 const DEFAULT_PAGE_DATA: PageData = {
   hero: {
-    job: "Fullstack Web and hybrid Mobile app developer",
+    job: "AI native Fullstack Web and Mobile developer",
     location: "Kolkata, WB, India",
     countrySymbol: "IN",
     description:
-      "A passionate fullstack web and hybrid mobile application developer building bleeding edge tech projects in Typescript, React Native, Solidity and Rust for people.",
+      "AI native fullstack web and hybrid mobile developer building bleeding edge projects in Typescript, Expo, Python and Rust for founders, startups and scaleups.",
     resumeUrl:
       "https://drive.google.com/file/d/1zHZ2RjoZCFAS1_jVcSpGhxSoSQ52EJXw/view?usp=drive_link",
     socials: {
       github: "https://github.com/sourabratabose",
       linkedin: "https://www.linkedin.com/in/sourabratabose/",
       twitter: "https://x.com/sourabrata_bose",
-      instagram: "https://www.instagram.com/sourabratabose.dev/",
+      instagram: "https://www.instagram.com/sourabratabose1/",
     },
   },
   codingProfile: [
@@ -44,6 +44,19 @@ const DEFAULT_PAGE_DATA: PageData = {
         "Have an acceptance rate over 70% + in overall submissions.",
       ],
     },
+    {
+      platform: "CodeChef",
+      url: "https://www.codechef.com/users/sourabratabose",
+      img: "/cc.jpeg",
+      imgFallback: "CC",
+      description:
+        "Displaying my progress in competitive problem solving skills over time. This serves as a public record of my competitive coding journey and improvement on the platform.",
+      pointsToBeNoted: [
+        "Solved over 50+ questions in total.",
+        "Participated in 10+ contests.",
+        "Rated as a 3 star + problem solver.",
+      ],
+    }
   ],
   certification: [
     {
@@ -93,8 +106,8 @@ const DEFAULT_PAGE_DATA: PageData = {
       img: "/iiitk.jpg",
       imgFallback: "IIITK",
       institute: "Indian Institute of Information Technology, Kalyani",
-      timePeriod: "December 2021 - July 2025",
-      grade: "7.75/10",
+      timePeriod: "November 2021 - July 2025",
+      grade: "7.8/10",
       lessons: [
         "Linear Algebra",
         "Differential Calculus",
@@ -126,7 +139,7 @@ const DEFAULT_PAGE_DATA: PageData = {
       ],
     },
     {
-      degree: "Diploma in General Education",
+      degree: "Matriculation",
       img: "apjs.jpg",
       imgFallback: "APJS",
       institute: "Apeejay School, Salt Lake",
@@ -149,10 +162,11 @@ const DEFAULT_PAGE_DATA: PageData = {
       skills: [
         "Javascript",
         "Typescript",
-        "C",
         "C++",
         "Rust",
-        "Solidity",
+        "HTML5",
+        "CSS3",
+        "Kotlin",
         "Java",
         "Python",
       ],
@@ -167,21 +181,25 @@ const DEFAULT_PAGE_DATA: PageData = {
         "Redis",
         "DrizzleORM",
         "Mongoose",
+        "SQLAlchemy",
+        "IO Redis", 
+        "PyMongo"
       ],
       color: "red",
     },
     {
       category: "Frameworks and Runtimes",
       skills: [
-        "BunJS",
+        "Bun/Node",
         "NextJS",
-        "ReactJS",
-        "ElysiaJS",
+        "Supabase",
+        "NestJS",
         "BetterAuthJS",
-        "ReactNative",
-        "Anchor",
-        "Tokio",
-        "Axum",
+        "Expo",
+        "FastAPI",
+        "LangChain",
+        "LangGraph",
+        "Open Telemetry"
       ],
       color: "amber",
     },
@@ -192,14 +210,15 @@ const DEFAULT_PAGE_DATA: PageData = {
         "Docker",
         "Kubernetes",
         "GitHub Actions",
-        "Forage",
-        "Grafana + Loki",
+        "Azure",
+        "AWS",
+        "Grafana Stack",
       ],
       color: "lime",
     },
   ],
   about: [
-    "I'm a 23-year-old junior Fullstack Web and Hybrid Mobile Application Developer with a knack for building products that make a difference. My expertise spans both frontend (both web and mobile app) and backend technologies, enabling me to craft comprehensive solutions from the ground up.",
+    "I'm a 24-year-old AI native Fullstack Web and Hybrid Mobile Application Developer with a hunger for building products that make a difference. My expertise spansh frontend (both web and mobile), AI and backend technologies, enabling me to craft comprehensive solutions from the ground up.",
     "Throughout my career, I've been deeply involved in the startup ecosystem. I've worked with various startups, embracing the fast-paced, innovative nature of these environments. This journey led me gain firsthand experience in every aspect of product development and business operations.",
     "During my high school years, I excelled in software development, architecture and computer internals, earning the top scores in this field and vocational training. This early achievement laid the foundation for my passion and expertise in programming.",
   ],
@@ -344,6 +363,55 @@ const DEFAULT_PAGE_DATA: PageData = {
   ],
   experience: [
     {
+      company: "Growth Loops Technology",
+      role: "Fullstack Developer",
+      time: "December 1, 2025 - September 30, 2026",
+      url: "https://drive.google.com/file/d/1LEbhYyRHOUkxLC5ucrH2rAIoybVmhYoP/view?usp=drive_link",
+      img: "/glt.jpeg",
+      imgFallback: "GLT",
+      description:
+        "As a Fullstack developer, I built reliable and scalable fullstack applications and features using NextJS, Framer Motion, Redis, PostgreSQL, Azure, BullMQ, and MongoDB. My daily tasks involved developinging backend APIs and interactive smooth UIs, collaborating with managers on requirement clarififcations and user stories. Participated in daily Standups and regular Client Calls.",
+      pointsToBeNoted: [
+        "Scaffolded an order discovery and sales oppurtunity platform. Created a sell order and buy order matching engine using Machine Learning model.",
+        "Built a events based user tracking analytics reporting and dashboarding system. Used Google BigQuery on our backend Event storage.",
+        "Used Sendgrid API and templates for creating HTMl/CSS based email notification templates. Built email engagement tracker from user's email interaction.",
+        "Created NextJS based web application displaying interactive charts and analytics dashboard. Used React Server Components for imporved hydration and render performance.",
+        "Used ShadCN components and customized them for creating dashboards. Used Zod and Formik for forms and data validation. Created axios shared HTTP module for API call handling."
+      ],
+    },
+    {
+      company: "Growth Loops Technology",
+      role: "Backend Developer",
+      time: "September 1, 2025 - November 30, 2025",
+      url: "https://drive.google.com/file/d/1s6Hze-SiMYbVoriLT7qQj3GHt3evZm-2/view?usp=sharing",
+      img: "/glt.jpeg",
+      imgFallback: "GLT",
+      description:
+        "As a Backend developer, I built reliable and resilient backend applications using PostgreSQL, AWS, BullMQ, and MongoDB. My daily tasks involved developinging backend APIs, collaborating with senior engineers on feature implementation and bug fixes. Participated in Daily Scrum Meetings and clarified requirements with edge cases.",
+      pointsToBeNoted: [
+        "Created the MVP backend of an AI powered machinary diagnostics website. Used Socket.IO, NestJS, PostgreSQL and Pinecone for creating an interactive chatbot.",
+        "Created a full fledged LMS platform which had AI generated content for technician training and certification. Performed payment integration for subscription.",
+        "Created and maintained Pinecone indexes and mapped vector embeddings for each multimedia uploaded to the server. Used and maintained ID mapping for each multimedia.",
+        "Created a full fledged machinary spare parts based E - Commerce platform with original OEM and distributor role signup. Used Stripe for Multi - Currency transactions.",
+      ],
+    },
+    {
+      company: "Growth Loops Technology",
+      role: "Backend Developer Intern",
+      time: "May 26, 2025 - August 30, 2025",
+      url: "https://drive.google.com/file/d/1eN7xV6jhGiYcpqgPT0hAEsjVxN09tD1r/view?usp=drive_link",
+      img: "/glt.jpeg",
+      imgFallback: "GLT",
+      description:
+        "As a Backend developer intern, I immersed myself in building backend microservice using PostgreSQL, Bun.js, BullMQ, and . My daily tasks involved developinging backend APIs, collaborating with senior engineers on feature implementation and bug fixes. Participated in Daily Scrum Meetings and understanding requirements to deployment.",
+      pointsToBeNoted: [
+        "Developed a PDF generating microservice which dynamically generated responsive fixed PDF layout with dynamic content data.",
+        "Implemented authorized GET and POST endpoints in Django for an accounting feature in the application.",
+        "Optimized database queries using Django ORM joins and cached responses, significantly improving API GET response time.",
+        "Created multipart video upload endpoint for accepting and processing (over 10GB in size) video on disk. Saved the output in S3 bucket.",
+      ],
+    },
+    {
       company: "CodSoft",
       role: "Web Developer Intern",
       time: "March 12, 2025 - April 20, 2025",
@@ -375,7 +443,7 @@ const DEFAULT_PAGE_DATA: PageData = {
       ],
     },
   ],
-  contactEmail: "bose.sourabrata21century@gmail.com",
+  contactEmail: "me@sourabratabose.dev",
   achievements: [
     {
       category: "Test Scores",

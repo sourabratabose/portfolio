@@ -16,9 +16,10 @@ import {
   TextArea,
   TextField,
 } from "@radix-ui/themes";
-import { FormEvent, FormEventHandler, useContext, useState } from "react";
+import { SubmitEvent, useContext, useState } from "react";
 import messageSend, { messageSchema } from "../function/MessageSend";
 import PageDataContext from "../contexts/PageDataContext";
+import { SubmitEventHandler } from "react";
 
 export default function Contact() {
   const [sendingMessage, setSendingMessage] = useState<boolean>(false);
@@ -28,8 +29,8 @@ export default function Contact() {
 
   const { contactEmail: data } = useContext(PageDataContext);
 
-  const submitHandler: FormEventHandler<HTMLFormElement> = async (
-    e: FormEvent<HTMLFormElement>
+  const submitHandler: SubmitEventHandler<HTMLFormElement> = async (
+    e: SubmitEvent<HTMLFormElement>
   ) => {
     e.preventDefault();
     setSendingMessage(true);
@@ -47,6 +48,7 @@ export default function Contact() {
       setSendingMessage(false);
     }
   };
+
   return (
     <Flex
       direction={"column"}
