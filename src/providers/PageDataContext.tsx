@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 import DEFAULT_PAGE_DATA from "../constants/page-data";
 import PageDataContext from "../contexts/PageDataContext";
 

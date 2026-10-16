@@ -1,18 +1,19 @@
+import { Link2Icon, TriangleRightIcon } from "@radix-ui/react-icons";
 import {
-	Section,
-	Flex,
-	Heading,
-	Text,
 	Badge,
 	Em,
+	Flex,
+	Heading,
 	Link,
+	Section,
+	Text,
 } from "@radix-ui/themes";
-import { Fragment } from "react/jsx-runtime";
 import { useContext } from "react";
-import AchievementsData, { Achievement } from "../types/AchievementsData";
-import { Link2Icon, TriangleRightIcon } from "@radix-ui/react-icons";
-import PageDataType from "../types/PageDataContext";
+import { Fragment } from "react/jsx-runtime";
 import PageDataContext from "../contexts/PageDataContext";
+import type AchievementsData from "../types/AchievementsData";
+import type { Achievement } from "../types/AchievementsData";
+import type PageDataType from "../types/PageDataContext";
 
 export default function KnowMore() {
 	const { achievements: data } = useContext<PageDataType>(PageDataContext);
@@ -67,7 +68,7 @@ export default function KnowMore() {
 											width={"100%"}
 											wrap={"wrap"}
 										>
-											{achievement.url != undefined ? (
+											{achievement.url !== undefined ? (
 												<Link href={achievement.url} underline={"hover"}>
 													<Badge color={"bronze"} size={"3"}>
 														{achievement.heading} <Link2Icon />
@@ -78,7 +79,7 @@ export default function KnowMore() {
 													{achievement.heading}
 												</Badge>
 											)}
-											{achievement.date != undefined ? (
+											{achievement.date !== undefined ? (
 												<Text className="text-nowrap">
 													<Em>( {achievement.date} )</Em> :
 												</Text>

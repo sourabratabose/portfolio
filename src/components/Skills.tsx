@@ -1,8 +1,8 @@
-import { Section, Flex, Heading, Badge } from "@radix-ui/themes";
-import SkillData from "../types/SkillData";
-import { Fragment } from "react/jsx-runtime";
+import { Badge, Flex, Heading, Section } from "@radix-ui/themes";
 import { useContext } from "react";
+import { Fragment } from "react/jsx-runtime";
 import PageDataContext from "../contexts/PageDataContext";
+import type SkillData from "../types/SkillData";
 
 export default function Skills() {
 	const { skills: skillData } = useContext(PageDataContext);

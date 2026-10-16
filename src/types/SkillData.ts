@@ -1,4 +1,4 @@
-import { BadgeProps } from "@radix-ui/themes";
+import type { BadgeProps } from "@radix-ui/themes";
 
 type SkillData = {
 	category: string;

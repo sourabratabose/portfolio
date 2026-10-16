@@ -1,17 +1,17 @@
 import {
-	Section,
+	Avatar,
+	Blockquote,
+	Button,
+	DropdownMenu,
+	Em,
 	Flex,
 	Heading,
-	Blockquote,
-	DropdownMenu,
-	Button,
-	Avatar,
+	Section,
 	Text,
-	Em,
 } from "@radix-ui/themes";
 import { useContext } from "react";
-import PageDataType from "../types/PageDataContext";
 import PageDataContext from "../contexts/PageDataContext";
+import type PageDataType from "../types/PageDataContext";
 
 export default function Education() {
 	const { education: data } = useContext<PageDataType>(PageDataContext);

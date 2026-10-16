@@ -1,8 +1,8 @@
 import { Flex, Heading, Section, Text } from "@radix-ui/themes";
 import { useContext } from "react";
 import { Fragment } from "react/jsx-runtime";
-import PageDataType from "../types/PageDataContext";
 import PageDataContext from "../contexts/PageDataContext";
+import type PageDataType from "../types/PageDataContext";
 
 export default function About() {
 	const { about: aboutBody } = useContext<PageDataType>(PageDataContext);
@@ -16,7 +16,7 @@ export default function About() {
 					{aboutBody.map((val, idx: number) => (
 						<Fragment key={idx}>
 							{val}
-							{idx != aboutBody.length - 1 && (
+							{idx !== aboutBody.length - 1 && (
 								<>
 									<br />
 									<br />

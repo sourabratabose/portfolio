@@ -1,4 +1,4 @@
-import ThemeContextData from "../types/ThemeContextData";
+import type ThemeContextData from "../types/ThemeContextData";
 
 const DEFAULT_THEME_DATA: ThemeContextData = {
 	currentTheme: "light",

@@ -1,17 +1,17 @@
-import { TriangleRightIcon, Link2Icon } from "@radix-ui/react-icons";
+import { Link2Icon, TriangleRightIcon } from "@radix-ui/react-icons";
 import {
-	Section,
+	Avatar,
+	Blockquote,
+	Button,
 	Flex,
 	Heading,
-	Blockquote,
 	Link,
-	Button,
+	Section,
 	Text,
-	Avatar,
 } from "@radix-ui/themes";
 import { useContext } from "react";
-import PageDataType from "../types/PageDataContext";
 import PageDataContext from "../contexts/PageDataContext";
+import type PageDataType from "../types/PageDataContext";
 
 export default function Experience() {
 	const { experience: data } = useContext<PageDataType>(PageDataContext);

@@ -1,20 +1,20 @@
 import { Box, Container, Flex, Theme } from "@radix-ui/themes";
-import Header from "./components/Header";
-import ThemeContextData from "./types/ThemeContextData";
 import { useContext } from "react";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import Contact from "./components/Contact";
 import About from "./components/About";
-import Skills from "./components/Skills";
-import Education from "./components/Education";
-import CodingProfiles from "./components/CodingProfiles";
 import Certifications from "./components/Certifications";
-import Projects from "./components/Projects";
-import Newsletter from "./components/Newsletter";
+import CodingProfiles from "./components/CodingProfiles";
+import Contact from "./components/Contact";
+import Education from "./components/Education";
 import Experience from "./components/Experience";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
 import KnowMore from "./components/KnowMore";
+import Newsletter from "./components/Newsletter";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 import ThemeContext from "./contexts/ThemeContext";
+import type ThemeContextData from "./types/ThemeContextData";
 
 function App() {
 	const { currentTheme }: ThemeContextData = useContext(ThemeContext);

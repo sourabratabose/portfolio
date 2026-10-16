@@ -1,7 +1,7 @@
-import { ReactNode, useEffect, useState } from "react";
+import { type ReactNode, useEffect, useState } from "react";
+import ThemeContext from "../contexts/ThemeContext";
 import type ThemeContextData from "../types/ThemeContextData";
 import { Themes } from "../types/ThemeContextData";
-import ThemeContext from "../contexts/ThemeContext";
 
 export default function ThemeProvider({ children }: { children: ReactNode }) {
 	const [theme, setTheme] = useState<ThemeContextData["currentTheme"]>("dark");
@@ -16,10 +16,10 @@ export default function ThemeProvider({ children }: { children: ReactNode }) {
 		const storedTheme = localStorage.getItem("theme");
 		if (storedTheme != null) {
 			Themes.forEach((possibleThemeValue: (typeof Themes)[number]) => {
-				if (storedTheme == possibleThemeValue) setTheme(storedTheme);
+				if (storedTheme === possibleThemeValue) setTheme(storedTheme);
 			});
 		} else localStorage.setItem("theme", theme);
-	}, []);
+	}, [theme]);
 
 	return (
 		<ThemeContext.Provider
@@ -27,9 +27,9 @@ export default function ThemeProvider({ children }: { children: ReactNode }) {
 				currentTheme: theme,
 				toggleTheme: (incoming_state?: ThemeContextData["currentTheme"]) =>
 					setTheme((prev_state) => {
-						if (incoming_state == undefined) {
+						if (incoming_state === undefined) {
 							const new_state: ThemeContextData["currentTheme"] =
-								prev_state == "dark" ? "light" : "dark";
+								prev_state === "dark" ? "light" : "dark";
 							localStorage.setItem("theme", new_state);
 							return new_state;
 						} else {

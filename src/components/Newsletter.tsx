@@ -3,11 +3,11 @@ import {
 	Badge,
 	Button,
 	Flex,
-	TextField,
-	Text,
 	Heading,
+	Text,
+	TextField,
 } from "@radix-ui/themes";
-import { FormEvent, FormEventHandler, useState } from "react";
+import { type FormEvent, type FormEventHandler, useState } from "react";
 import newsletter, { emailSchema } from "../function/NewsletterSignUp";
 
 export default function Newsletter() {
@@ -80,11 +80,11 @@ export default function Newsletter() {
 							<EnvelopeClosedIcon />
 						</TextField.Slot>
 					</TextField.Root>
-					{signUpStatus == "none" ? (
+					{signUpStatus === "none" ? (
 						<Button type="submit" loading={signingUp} disabled={signingUp}>
 							Subscribe <PaperPlaneIcon />
 						</Button>
-					) : signUpStatus == "success" ? (
+					) : signUpStatus === "success" ? (
 						<Badge color={"grass"} size={"3"}>
 							Sign up successful
 						</Badge>

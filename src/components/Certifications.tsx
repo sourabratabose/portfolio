@@ -1,17 +1,17 @@
+import { Link2Icon } from "@radix-ui/react-icons";
 import {
-	Section,
-	Flex,
-	Heading,
+	Avatar,
 	Blockquote,
 	Button,
-	Avatar,
+	Flex,
+	Heading,
 	Link,
+	Section,
 	Text,
 } from "@radix-ui/themes";
-import { Link2Icon } from "@radix-ui/react-icons";
 import { useContext } from "react";
-import PageDataType from "../types/PageDataContext";
 import PageDataContext from "../contexts/PageDataContext";
+import type PageDataType from "../types/PageDataContext";
 
 export default function Certifications() {
 	const { certification: data } = useContext<PageDataType>(PageDataContext);

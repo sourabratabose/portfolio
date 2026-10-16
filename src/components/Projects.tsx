@@ -1,15 +1,15 @@
+import { TriangleRightIcon } from "@radix-ui/react-icons";
 import {
-	Section,
+	Badge,
+	Blockquote,
+	Box,
+	Button,
 	Flex,
 	Heading,
-	Blockquote,
-	Badge,
-	Text,
-	Box,
 	Link,
-	Button,
+	Section,
+	Text,
 } from "@radix-ui/themes";
-import { TriangleRightIcon } from "@radix-ui/react-icons";
 import { useContext } from "react";
 import PageDataContext from "../contexts/PageDataContext";
 
@@ -87,7 +87,7 @@ export default function Projects() {
 								justify={"start"}
 							>
 								{val.urls.map((url, innerIdx) => {
-									if (url.href == "") return;
+									if (url.href === "") return null;
 									return (
 										<Link href={url.href} underline={"hover"} key={innerIdx}>
 											<Button variant={"surface"}>{url.label}</Button>

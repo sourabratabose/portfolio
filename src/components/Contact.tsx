@@ -16,10 +16,14 @@ import {
 	TextArea,
 	TextField,
 } from "@radix-ui/themes";
-import { SubmitEvent, useContext, useState } from "react";
-import messageSend, { messageSchema } from "../function/MessageSend";
+import {
+	type SubmitEvent,
+	type SubmitEventHandler,
+	useContext,
+	useState,
+} from "react";
 import PageDataContext from "../contexts/PageDataContext";
-import { SubmitEventHandler } from "react";
+import messageSend, { messageSchema } from "../function/MessageSend";
 
 export default function Contact() {
 	const [sendingMessage, setSendingMessage] = useState<boolean>(false);
@@ -98,7 +102,7 @@ export default function Contact() {
 						</Dialog.Description>
 						<form onSubmit={submitHandler}>
 							<Flex direction={"column"} gap={"3"}>
-								<label>
+								<label htmlFor="name">
 									<Text as="div" size="2" mb="1" weight="bold">
 										Your Name
 									</Text>
@@ -107,13 +111,13 @@ export default function Contact() {
 										name="name"
 									/>
 								</label>
-								<label>
+								<label htmlFor="email">
 									<Text as="div" size="2" mb="1" weight="bold">
 										Contact E-Mail
 									</Text>
 									<TextField.Root placeholder="Enter your email" name="email" />
 								</label>
-								<label>
+								<label htmlFor="company">
 									<Text as="div" size="2" mb="1" weight="bold">
 										Company Name{" "}
 										<Text as={"span"} color={"gray"} weight={"regular"}>
@@ -125,7 +129,7 @@ export default function Contact() {
 										name="company"
 									/>
 								</label>
-								<label>
+								<label htmlFor="message">
 									<Text as="div" size="2" mb="1" weight="bold">
 										Your Message
 									</Text>
@@ -139,7 +143,7 @@ export default function Contact() {
 										Cancel
 									</Button>
 								</Dialog.Close>
-								{sendStatus == "none" ? (
+								{sendStatus === "none" ? (
 									<Button
 										type="submit"
 										loading={sendingMessage}
@@ -148,7 +152,7 @@ export default function Contact() {
 									>
 										Send <PaperPlaneIcon />
 									</Button>
-								) : sendStatus == "success" ? (
+								) : sendStatus === "success" ? (
 									<Badge color={"grass"} size={"3"}>
 										Message Sent
 									</Badge>
@@ -161,7 +165,7 @@ export default function Contact() {
 						</form>
 					</Dialog.Content>
 				</Dialog.Root>
-				<Link href={"mailto:" + data} underline={"hover"}>
+				<Link href={`mailto:${data}`} underline={"hover"}>
 					<Button variant={"surface"}>
 						E - Mail Me <EnvelopeClosedIcon />
 					</Button>

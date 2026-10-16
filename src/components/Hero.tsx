@@ -16,8 +16,8 @@ import {
 	Text,
 } from "@radix-ui/themes";
 import { useContext } from "react";
-import PageDataType from "../types/PageDataContext";
 import PageDataContext from "../contexts/PageDataContext";
+import type PageDataType from "../types/PageDataContext";
 
 export default function Hero() {
 	const { hero: data } = useContext<PageDataType>(PageDataContext);
