@@ -11,6 +11,7 @@
     "lint": "biome lint .",
     "lint:fix": "biome lint --write .",
     "fmt": "biome format --write .",
+    "check": "biome ci .",
     "preview": "vite preview",
     "predeploy": "bun run build",
     "deploy": "gh-pages -d ./dist"
